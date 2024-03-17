@@ -6,7 +6,7 @@
   }
 
   body {
-    height: 150vh;
+    height: 100vh;
     background: white;
     background-position: center;
     background-size: cover;
@@ -14,6 +14,10 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+  }
+
+  ::-webkit-scrollbar{
+    width:0px;
   }
 
   .container {
@@ -32,8 +36,9 @@
     text-align: center;
     place-items: center;
     padding: 30px 20px;
-    background: pink;
-    border-radius: 10px;
+    background: white;
+    border-radius: 35px;
+    border: 1px solid black;
   }
 
   .items img {
@@ -55,8 +60,12 @@
   .container .items audio{
     width: 100%;
     outline: none;
-    background: white;
+    background: linear-gradient(100deg, pink, brown);
     border-radius: 10px;
+   }
+
+   audio::-webkit-media-controls-panel {
+    background: linear-gradient(100deg, pink, brown);
    }
 
    .container .items audio::-webkit-media-controls-enclosure{
